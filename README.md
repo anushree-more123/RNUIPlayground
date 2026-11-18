@@ -1,97 +1,123 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# RNUIPlayground 🎨
 
-# Getting Started
+**A React Native UI Playground – Build, explore, customize, and reuse beautiful UI components.**
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+RNUIPlayground is a personal React Native project where I experiment with building modern, reusable, and customizable UI components using React Native and TypeScript.
 
-## Step 1: Start Metro
+The goal is to create a collection of production-ready UI components that can be reused across different React Native applications.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## ✨ Project Goals
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- Build reusable and customizable UI components.
+- Maintain clean and scalable component architecture.
+- Explore modern mobile UI/UX designs.
+- Experiment with animations and interactive elements.
+- Create a personal React Native component library.
+- Share components and learnings with the developer community.
 
-```sh
-# Using npm
+## 🛠 Tech Stack
+
+- React Native CLI
+- TypeScript
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- React Native development environment
+- Android Studio
+- Xcode (for iOS development on macOS)
+- JDK 17
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/anushree-more123/RNUIPlayground.git
+```
+
+**2. Navigate to the project**
+
+```bash
+cd RNUIPlayground
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Install iOS dependencies**
+
+```bash
+cd ios
+pod install
+cd ..
+```
+
+**5. Start Metro**
+
+```bash
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Build and run your app
+**6. Run Android**
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
+```bash
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### iOS
+**7. Run iOS**
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+```bash
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 🧩 Component Categories
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+The following components are planned for the playground:
 
-## Step 3: Modify your app
+| Category    | Components                        |
+| ----------- | --------------------------------- |
+| Buttons     | Primary, Secondary, Outline, Icon |
+| Inputs      | Text Input, Search, Password, OTP |
+| Cards       | Profile, Product, Statistics      |
+| Navigation  | Custom Header, Bottom Navigation  |
+| Feedback    | Toast, Snackbar, Loader, Modal    |
+| Layout      | Divider, Container, Avatar        |
+| Advanced UI | Bottom Sheet, Accordion, Carousel |
 
-Now that you have successfully run the app, let's make changes!
+## 🗺️ Roadmap
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+- [ ] Initial project setup
+- [ ] Design system and theme configuration
+- [ ] Reusable button components
+- [ ] Custom input components
+- [ ] Reusable card components
+- [ ] Navigation components
+- [ ] Feedback components
+- [ ] Interactive component previews
+- [ ] Light and dark themes
+- [ ] Component documentation
+- [ ] Publish reusable components as an npm package
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## 🎯 Vision
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+This project is a continuous learning and experimentation space. New components, design ideas, and improvements will be added over time.
 
-## Congratulations! :tada:
+## 🤝 Contributions
 
-You've successfully run and modified your React Native App. :partying_face:
+Suggestions, feedback, and contributions are welcome!
 
-### Now what?
+## 👩‍💻 Author
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+**Anushree More**
 
-# Troubleshooting
+- GitHub: [@anushree-more123](https://github.com/anushree-more123)
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+---
 
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+⭐ If you find this project useful, consider giving it a star!
