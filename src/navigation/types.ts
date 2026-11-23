@@ -25,12 +25,12 @@ export type InputsStackParamList = {
     };
 };
 
+
 export type GraphStackParamList = {
     GraphHome: undefined;
-    GraphDetail: {
-        type: string;
-    };
+    ProgressBar: undefined;
 };
+
 
 export type RootTabParamList = {
     UI: NavigatorScreenParams<UIStackParamList>;

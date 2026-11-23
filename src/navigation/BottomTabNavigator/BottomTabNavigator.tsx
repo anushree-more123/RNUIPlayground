@@ -24,6 +24,8 @@ import {
 } from '../types';
 import CardsScreen from '../../screens/Cards/CardsScreen';
 import BadgesScreen from '../../screens/Badges/BadgesScreen';
+import GraphScreen from '../../screens/Graph/GraphScreen';
+import ProgressBarScreen from '../../screens/Graph/ProgressBarScreen/ProgressBarScreen';
 
 // Stack navigators
 const UIStack = createNativeStackNavigator<UIStackParamList>();
@@ -63,7 +65,13 @@ const InputsStackNavigator = () => (
 const GraphStackNavigator = () => (
   <GraphStack.Navigator screenOptions={{ headerShown: false }}>
     <GraphStack.Screen name="GraphHome" component={GraphScreen} />
-    <GraphStack.Screen name="GraphDetail" component={GraphDetailScreen} />
+    <GraphStack.Screen
+      name="ProgressBar"
+      component={ProgressBarScreen}
+      options={{
+        headerShown: false,
+      }}
+    />
   </GraphStack.Navigator>
 );
 
@@ -74,7 +82,6 @@ const LayoutDetailScreen = () => null;
 const InputsScreen = () => null;
 const InputDetailScreen = () => null;
 
-const GraphScreen = () => null;
 const GraphDetailScreen = () => null;
 
 // Bottom Tabs
