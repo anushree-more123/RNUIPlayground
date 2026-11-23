@@ -7,6 +7,7 @@ export type UIStackParamList = {
     ButtonDetail: {
         variant: string;
     };
+    Cards: undefined;
 };
 
 export type LayoutStackParamList = {

@@ -1,6 +1,12 @@
 import React from 'react';
-import { ScrollView, Text, View, Alert } from 'react-native';
+import { ScrollView, Text, View, Alert, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+
+import AppIcon from '../../components/common/AppIcon';
+import { UIStackParamList } from '../../navigation/types';
+
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons/faArrowLeft';
 
 import {
   faPlus,
@@ -23,7 +29,9 @@ import Button from '../../components/buttons/Button';
 import { useAppTheme } from '../../theme/ThemeContext';
 import { styles } from './ButtonsScreen.styles';
 
-const ButtonsScreen = () => {
+type ButtonsScreenProps = NativeStackScreenProps<UIStackParamList, 'Buttons'>;
+
+const ButtonsScreen: React.FC<ButtonsScreenProps> = ({ navigation }) => {
   const { colors } = useAppTheme();
 
   const showMessage = (message: string) => {
@@ -74,13 +82,27 @@ const ButtonsScreen = () => {
         contentContainerStyle={styles.content}
       >
         {/* Header */}
+        {/* Header */}
         <View style={styles.header}>
-          <Text style={[styles.heading, { color: colors.textPrimary }]}>
-            Buttons
-          </Text>
-          <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
-            Explore button variants, sizes, colors, states and custom styles.
-          </Text>
+          <Pressable
+            onPress={() => navigation.goBack()}
+            style={[styles.backButton, { backgroundColor: colors.accentLight }]}
+            hitSlop={8}
+            accessibilityRole="button"
+            accessibilityLabel="Go back"
+          >
+            <AppIcon icon={faArrowLeft} color={colors.accent} size={18} />
+          </Pressable>
+
+          <View style={styles.headerContent}>
+            <Text style={[styles.heading, { color: colors.textPrimary }]}>
+              Buttons
+            </Text>
+
+            <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
+              Explore button variants, sizes, colors, states and custom styles.
+            </Text>
+          </View>
         </View>
 
         {/* 1. Variants */}

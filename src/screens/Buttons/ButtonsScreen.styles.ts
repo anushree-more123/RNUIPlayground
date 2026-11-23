@@ -13,7 +13,10 @@ export const styles = StyleSheet.create({
     },
 
     header: {
-        marginBottom: spacing.xxl,
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: spacing.md,
+        marginBottom: spacing.xl,
     },
 
     heading: {
@@ -66,5 +69,17 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 12,
         marginTop: spacing.xxxl,
+    },
+
+    backButton: {
+        width: 42,
+        height: 42,
+        borderRadius: radius.md,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
+    headerContent: {
+        flex: 1,
     },
 });

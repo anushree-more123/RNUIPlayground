@@ -22,6 +22,7 @@ import {
   InputsStackParamList,
   GraphStackParamList,
 } from '../types';
+import CardsScreen from '../../screens/Cards/CardsScreen';
 
 // Stack navigators
 const UIStack = createNativeStackNavigator<UIStackParamList>();
@@ -36,6 +37,7 @@ const UIStackNavigator = () => (
   <UIStack.Navigator screenOptions={{ headerShown: false }}>
     <UIStack.Screen name="Home" component={HomeScreen} />
     <UIStack.Screen name="Buttons" component={ButtonsScreen} />
+    <UIStack.Screen name="Cards" component={CardsScreen} />
   </UIStack.Navigator>
 );
 

@@ -1,62 +1,62 @@
 
 export const lightColors = {
-    background: '#F5F0FA',
-    surface: '#FFFCFF',
-    surfaceSecondary: '#F0EAF5',
+    background: '#F0F3FC',
+    surface: '#FFFFFF',
+    surfaceSecondary: '#E8EDFA',
 
-    accent: '#80639F',
-    accentLight: '#E9DDF5',
-    accentStrong: '#695080',
+    accent: '#5268F5',
+    accentLight: '#E5EAFE',
+    accentStrong: '#354BCB',
 
-    textPrimary: '#51405F',
-    textSecondary: '#92849B',
+    textPrimary: '#293D83',
+    textSecondary: '#8995B2',
     textInverse: '#FFFFFF',
 
-    border: '#E8DFED',
-    divider: '#EEE7F1',
+    border: '#E1E7F3',
+    divider: '#E9EDF5',
 
-    success: '#668A70',
-    successBackground: '#E7F0E8',
+    success: '#35A879',
+    successBackground: '#E3F5EC',
 
-    warning: '#B98242',
-    warningBackground: '#FFF0DF',
+    warning: '#E5A343',
+    warningBackground: '#FFF2DF',
 
-    error: '#C87585',
-    errorBackground: '#F8E9EF',
+    error: '#E16B78',
+    errorBackground: '#FCE9EB',
 
-    icon: '#80639F',
-    tabInactive: '#A69AAE',
+    icon: '#5268F5',
+    tabInactive: '#8C96AA',
 
-    overlay: 'rgba(40, 25, 50, 0.35)',
+    overlay: 'rgba(26, 42, 83, 0.35)',
 };
 
 export const darkColors = {
-    background: '#211B28',
-    surface: '#302638',
-    surfaceSecondary: '#392D41',
+    background: '#141C2E',
+    surface: '#202B43',
+    surfaceSecondary: '#293650',
 
-    accent: '#B69AD2',
-    accentLight: '#493752',
-    accentStrong: '#D0B7E7',
+    accent: '#8293FF',
+    accentLight: '#303D70',
+    accentStrong: '#A5B0FF',
 
-    textPrimary: '#F4EAF8',
-    textSecondary: '#B9A9C3',
-    textInverse: '#241B2B',
+    textPrimary: '#EDF1FF',
+    textSecondary: '#A1ADC8',
+    textInverse: '#17213A',
 
-    border: '#493B52',
-    divider: '#403448',
+    border: '#35425D',
+    divider: '#303D56',
 
-    success: '#A4C9AA',
-    successBackground: '#304438',
+    success: '#64D2A5',
+    successBackground: '#244B42',
 
-    warning: '#E3B77E',
-    warningBackground: '#4A3829',
+    warning: '#F0BD72',
+    warningBackground: '#4D3D2B',
 
-    error: '#E5A0B0',
-    errorBackground: '#4A303D',
+    error: '#F08C98',
+    errorBackground: '#4D303D',
 
-    icon: '#B69AD2',
-    tabInactive: '#95879D',
+    icon: '#8293FF',
+    tabInactive: '#929EB7',
 
     overlay: 'rgba(0, 0, 0, 0.60)',
 };
