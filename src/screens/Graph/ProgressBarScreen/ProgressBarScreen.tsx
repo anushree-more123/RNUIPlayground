@@ -4,13 +4,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 import AppIcon from '../../../components/common/AppIcon';
-import ProgressBar from '../../../components/progress/ProgressBar/ProgressBar';
 
 import { GraphStackParamList } from '../../../navigation/types';
 import { useAppTheme } from '../../../theme/ThemeContext';
 import { styles } from './ProgressBarScreen.styles';
 
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons/faArrowLeft';
+import ProgressBar from '../../../components/graph-components/progress/ProgressBar/ProgressBar';
 
 type ProgressBarScreenProps = NativeStackScreenProps<
   GraphStackParamList,

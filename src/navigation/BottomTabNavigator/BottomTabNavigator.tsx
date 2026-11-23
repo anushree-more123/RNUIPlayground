@@ -11,7 +11,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import HomeScreen from '../../screens/Home/HomeScreen';
-import ButtonsScreen from '../../screens/Buttons/ButtonsScreen';
 
 import { useAppTheme } from '../../theme/ThemeContext';
 
@@ -22,10 +21,11 @@ import {
   InputsStackParamList,
   GraphStackParamList,
 } from '../types';
-import CardsScreen from '../../screens/Cards/CardsScreen';
-import BadgesScreen from '../../screens/Badges/BadgesScreen';
+import CardsScreen from '../../screens/Home/Cards/CardsScreen';
+import BadgesScreen from '../../screens/Home/Badges/BadgesScreen';
 import GraphScreen from '../../screens/Graph/GraphScreen';
 import ProgressBarScreen from '../../screens/Graph/ProgressBarScreen/ProgressBarScreen';
+import ButtonsScreen from '../../screens/Home/Buttons/ButtonsScreen';
 
 // Stack navigators
 const UIStack = createNativeStackNavigator<UIStackParamList>();
