@@ -36,6 +36,9 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
       case 'cards':
         navigation.navigate('Cards');
         break;
+      case 'badges':
+        navigation.navigate('Badges');
+        break;
       default:
         console.log(`Navigation for ${categoryId} is not implemented yet.`);
     }

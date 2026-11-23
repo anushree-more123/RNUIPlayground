@@ -8,6 +8,7 @@ export type UIStackParamList = {
         variant: string;
     };
     Cards: undefined;
+    Badges: undefined;
 };
 
 export type LayoutStackParamList = {

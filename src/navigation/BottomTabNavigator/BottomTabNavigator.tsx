@@ -23,6 +23,7 @@ import {
   GraphStackParamList,
 } from '../types';
 import CardsScreen from '../../screens/Cards/CardsScreen';
+import BadgesScreen from '../../screens/Badges/BadgesScreen';
 
 // Stack navigators
 const UIStack = createNativeStackNavigator<UIStackParamList>();
@@ -38,6 +39,7 @@ const UIStackNavigator = () => (
     <UIStack.Screen name="Home" component={HomeScreen} />
     <UIStack.Screen name="Buttons" component={ButtonsScreen} />
     <UIStack.Screen name="Cards" component={CardsScreen} />
+    <UIStack.Screen name="Badges" component={BadgesScreen} />
   </UIStack.Navigator>
 );
 
