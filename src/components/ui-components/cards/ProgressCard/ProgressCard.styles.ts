@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { spacing, radius } from '../../../../constants/spacing';
+import { FONT_SIZE } from '../../../../constants/font-size';
 
 export const styles = StyleSheet.create({
     container: {
@@ -19,12 +20,12 @@ export const styles = StyleSheet.create({
 
     title: {
         flex: 1,
-        fontSize: 14,
+        fontSize: FONT_SIZE.md,
         fontWeight: '700',
     },
 
     description: {
-        fontSize: 11,
+        fontSize: FONT_SIZE.xs,
         lineHeight: 16,
     },
 
@@ -41,7 +42,7 @@ export const styles = StyleSheet.create({
     },
 
     progressLabel: {
-        fontSize: 11,
+        fontSize: FONT_SIZE.xs,
         fontWeight: '700',
     },
 

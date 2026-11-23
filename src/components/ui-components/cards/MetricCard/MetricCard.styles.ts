@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { spacing, radius } from '../../../../constants/spacing';
+import { FONT_SIZE } from '../../../../constants/font-size';
 
 export const styles = StyleSheet.create({
     container: {
@@ -11,7 +12,7 @@ export const styles = StyleSheet.create({
     },
 
     title: {
-        fontSize: 12,
+        fontSize: FONT_SIZE.sm,
         fontWeight: '500',
     },
 
@@ -42,7 +43,7 @@ export const styles = StyleSheet.create({
     },
 
     description: {
-        fontSize: 11,
+        fontSize: FONT_SIZE.xs,
         lineHeight: 16,
     },
 });

@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { radius, spacing } from '../../../constants/spacing';
+import { FONT_SIZE } from '../../../constants/font-size';
 
 export const styles = StyleSheet.create({
     safeArea: {
@@ -42,7 +43,7 @@ export const styles = StyleSheet.create({
     },
 
     sectionDescription: {
-        fontSize: 12,
+        fontSize: FONT_SIZE.sm,
         lineHeight: 18,
     },
 
@@ -64,12 +65,12 @@ export const styles = StyleSheet.create({
     },
 
     variationTitle: {
-        fontSize: 14,
+        fontSize: FONT_SIZE.md,
         fontWeight: '700',
     },
 
     footer: {
-        fontSize: 12,
+        fontSize: FONT_SIZE.sm,
         textAlign: 'center',
         marginTop: spacing.xxxl,
     },

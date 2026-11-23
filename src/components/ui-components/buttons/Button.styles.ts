@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { spacing, radius } from '../../../constants/spacing';
+import { FONT_SIZE } from '../../../constants/font-size';
 
 export const styles = StyleSheet.create({
     button: {
@@ -45,7 +46,7 @@ export const styles = StyleSheet.create({
     },
 
     label: {
-        fontSize: 14,
+        fontSize: FONT_SIZE.md,
         fontWeight: '600',
     },
 });

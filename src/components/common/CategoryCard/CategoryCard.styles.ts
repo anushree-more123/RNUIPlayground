@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { FONT_SIZE } from '../../../constants/font-size';
 
 export const styles = StyleSheet.create({
     container: {
@@ -20,12 +21,12 @@ export const styles = StyleSheet.create({
         flex: 1,
     },
     title: {
-        fontSize: 16,
+        fontSize: FONT_SIZE.lg,
         fontWeight: '700',
         marginBottom: 5,
     },
     description: {
-        fontSize: 12,
+        fontSize: FONT_SIZE.sm,
         lineHeight: 18,
     },
     footer: {
@@ -35,7 +36,7 @@ export const styles = StyleSheet.create({
         marginTop: 14,
     },
     count: {
-        fontSize: 11,
+        fontSize: FONT_SIZE.xs,
         fontWeight: '600',
     },
 });

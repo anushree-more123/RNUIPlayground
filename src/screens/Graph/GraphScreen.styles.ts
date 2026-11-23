@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { spacing, radius } from '../../constants/spacing';
+import { FONT_SIZE } from '../../constants/font-size';
 
 export const styles = StyleSheet.create({
     container: {
@@ -22,7 +23,7 @@ export const styles = StyleSheet.create({
     },
 
     subtitle: {
-        fontSize: 14,
+        fontSize: FONT_SIZE.md,
         lineHeight: 21,
         marginTop: spacing.xs,
     },
@@ -32,12 +33,12 @@ export const styles = StyleSheet.create({
     },
 
     sectionTitle: {
-        fontSize: 20,
+        fontSize: FONT_SIZE.xxl,
         fontWeight: '700',
     },
 
     sectionDescription: {
-        fontSize: 14,
+        fontSize: FONT_SIZE.md,
         lineHeight: 21,
         marginTop: spacing.xs,
     },
@@ -68,7 +69,7 @@ export const styles = StyleSheet.create({
     },
 
     cardTitle: {
-        fontSize: 18,
+        fontSize: FONT_SIZE.xl,
         fontWeight: '700',
         marginBottom: spacing.xs,
     },
@@ -92,7 +93,7 @@ export const styles = StyleSheet.create({
     },
 
     footer: {
-        fontSize: 11,
+        fontSize: FONT_SIZE.xs,
         textAlign: 'center',
         marginTop: spacing.xxxl,
     },

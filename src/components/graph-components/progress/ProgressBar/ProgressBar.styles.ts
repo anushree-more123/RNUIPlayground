@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { spacing } from '../../../../constants/spacing';
+import { FONT_SIZE } from '../../../../constants/font-size';
 
 export const styles = StyleSheet.create({
     container: {
@@ -18,11 +19,11 @@ export const styles = StyleSheet.create({
     },
 
     thinLabel: {
-        fontSize: 11,
+        fontSize: FONT_SIZE.xs,
     },
 
     thickLabel: {
-        fontSize: 12,
+        fontSize: FONT_SIZE.sm,
     },
 
 

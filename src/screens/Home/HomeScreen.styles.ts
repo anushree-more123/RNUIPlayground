@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { spacing, radius } from '../../constants/spacing';
+import { FONT_SIZE } from '../../constants/font-size';
 
 export const styles = StyleSheet.create({
     safeArea: {
@@ -77,7 +78,7 @@ export const styles = StyleSheet.create({
     },
 
     exploreText: {
-        fontSize: 12,
+        fontSize: FONT_SIZE.sm,
         fontWeight: '700',
     },
 
@@ -106,13 +107,13 @@ export const styles = StyleSheet.create({
     },
 
     sectionTitle: {
-        fontSize: 18,
+        fontSize: FONT_SIZE.xl,
         fontWeight: '800',
         marginBottom: spacing.xs + 1,
     },
 
     sectionSubtitle: {
-        fontSize: 11,
+        fontSize: FONT_SIZE.xs,
     },
 
     categoryGrid: {

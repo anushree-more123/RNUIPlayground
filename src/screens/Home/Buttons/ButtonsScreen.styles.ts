@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { spacing, radius } from '../../../constants/spacing';
+import { FONT_SIZE } from '../../../constants/font-size';
 
 export const styles = StyleSheet.create({
     container: {
@@ -26,7 +27,7 @@ export const styles = StyleSheet.create({
     },
 
     subtitle: {
-        fontSize: 14,
+        fontSize: FONT_SIZE.md,
         lineHeight: 21,
     },
 
@@ -67,7 +68,7 @@ export const styles = StyleSheet.create({
 
     footer: {
         textAlign: 'center',
-        fontSize: 12,
+        fontSize: FONT_SIZE.sm,
         marginTop: spacing.xxxl,
     },
 

@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { spacing, radius } from '../../../../constants/spacing';
+import { FONT_SIZE } from '../../../../constants/font-size';
 
 export const styles = StyleSheet.create({
   badge: {
@@ -50,11 +51,11 @@ export const styles = StyleSheet.create({
   },
 
   mediumLabel: {
-    fontSize: 12,
+    fontSize: FONT_SIZE.sm,
   },
 
   largeLabel: {
-    fontSize: 14,
+    fontSize: FONT_SIZE.md,
   },
 
   dot: {

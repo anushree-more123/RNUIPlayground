@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { spacing, radius } from '../../../constants/spacing';
+import { FONT_SIZE } from '../../../constants/font-size';
 
 export const styles = StyleSheet.create({
     container: {
@@ -32,7 +33,7 @@ export const styles = StyleSheet.create({
     },
 
     heading: {
-        fontSize: 24,
+        fontSize: FONT_SIZE.xxxl,
         fontWeight: '700',
     },
 
@@ -48,7 +49,7 @@ export const styles = StyleSheet.create({
     },
 
     sectionTitle: {
-        fontSize: 18,
+        fontSize: FONT_SIZE.xl,
         fontWeight: '700',
     },
 
@@ -81,12 +82,12 @@ export const styles = StyleSheet.create({
     },
 
     progressValue: {
-        fontSize: 12,
+        fontSize: FONT_SIZE.sm,
         fontWeight: '600',
     },
 
     footer: {
-        fontSize: 11,
+        fontSize: FONT_SIZE.xs,
         textAlign: 'center',
         marginTop: spacing.xxxl,
     },
