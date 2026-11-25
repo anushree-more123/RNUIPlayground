@@ -27,6 +27,7 @@ import GraphScreen from '../../screens/Graph/GraphScreen';
 import ProgressBarScreen from '../../screens/Graph/ProgressBarScreen/ProgressBarScreen';
 import ButtonsScreen from '../../screens/Home/Buttons/ButtonsScreen';
 import DualProgressBarScreen from '../../screens/Graph/DualProgressBarScreen/DualProgressBarScreen';
+import CircularProgressChartScreen from '../../screens/Graph/CircularProgressChartScreen/CircularProgressChartScreen';
 
 // Stack navigators
 const UIStack = createNativeStackNavigator<UIStackParamList>();
@@ -76,6 +77,11 @@ const GraphStackNavigator = () => (
     <GraphStack.Screen
       name="DualProgressBar"
       component={DualProgressBarScreen}
+      options={{ headerShown: false }}
+    />
+    <GraphStack.Screen
+      name="CircularProgressChart"
+      component={CircularProgressChartScreen}
       options={{ headerShown: false }}
     />
   </GraphStack.Navigator>

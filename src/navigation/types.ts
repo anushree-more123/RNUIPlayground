@@ -30,6 +30,7 @@ export type GraphStackParamList = {
     GraphHome: undefined;
     ProgressBar: undefined;
     DualProgressBar: undefined;
+    CircularProgressChart: undefined;
 };
 
 

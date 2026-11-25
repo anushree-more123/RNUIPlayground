@@ -6,6 +6,7 @@ import {
   faChartLine,
   faArrowRight,
   faChartSimple,
+  faCircleNotch,
 } from '@fortawesome/free-solid-svg-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
@@ -31,6 +32,15 @@ const graphCategories = [
     count: '15 Examples',
     icon: faChartSimple,
     route: 'DualProgressBar' as const,
+  },
+
+  {
+    id: 'primary-circular-progress',
+    title: 'Circular Progress',
+    description: 'Circular indicators with animated progress rings.',
+    count: '10 Examples',
+    icon: faCircleNotch,
+    route: 'CircularProgressChart' as const,
   },
 ];
 
