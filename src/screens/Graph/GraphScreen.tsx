@@ -2,7 +2,11 @@ import React from 'react';
 import { ScrollView, Text, View, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faChartLine, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faChartLine,
+  faArrowRight,
+  faChartSimple,
+} from '@fortawesome/free-solid-svg-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 import { useAppTheme } from '../../theme/ThemeContext';
@@ -15,10 +19,18 @@ const graphCategories = [
   {
     id: 'progress',
     title: 'Progress Bar',
-    description: 'Progress indicators and completion status',
+    description: 'Progress indicators and completion status.',
     count: '19 Examples',
     icon: faChartLine,
     route: 'ProgressBar' as const,
+  },
+  {
+    id: 'dual-progress',
+    title: 'Dual Progress Bar',
+    description: 'Compare two progress values in one track.',
+    count: '15 Examples',
+    icon: faChartSimple,
+    route: 'DualProgressBar' as const,
   },
 ];
 

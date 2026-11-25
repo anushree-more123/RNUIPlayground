@@ -29,6 +29,7 @@ export type InputsStackParamList = {
 export type GraphStackParamList = {
     GraphHome: undefined;
     ProgressBar: undefined;
+    DualProgressBar: undefined;
 };
 
 

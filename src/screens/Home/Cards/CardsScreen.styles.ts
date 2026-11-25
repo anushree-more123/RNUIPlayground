@@ -48,9 +48,14 @@ export const styles = StyleSheet.create({
     },
 
     horizontalRow: {
+        display: 'flex',
+        flexWrap: 'wrap',
         flexDirection: 'row',
-        alignItems: 'stretch',
         gap: spacing.md,
+        justifyContent: 'space-between',
+    },
+    progressCard: {
+        width: '48%',
     },
 
     transactionList: {

@@ -5,8 +5,10 @@ import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
 
 import AppIcon from '../../../common/AppIcon';
 import BaseCard from '../BaseCard/BaseCard';
+
 import { useAppTheme } from '../../../../theme/ThemeContext';
 import { styles } from './ProgressCard.styles';
+import ProgressBar from '../../../graph-components/progress/ProgressBar/ProgressBar';
 
 export interface ProgressCardProps {
   title: string;
@@ -29,7 +31,9 @@ const ProgressCard: React.FC<ProgressCardProps> = ({
 }) => {
   const { colors } = useAppTheme();
 
-  const normalizedProgress = Math.max(0, Math.min(progress, 100));
+  const normalizedProgress = Number.isFinite(progress)
+    ? Math.max(0, Math.min(progress, 100))
+    : 0;
 
   return (
     <BaseCard style={[styles.container, style]} onPress={onPress}>
@@ -53,32 +57,20 @@ const ProgressCard: React.FC<ProgressCardProps> = ({
         </Text>
       ) : null}
 
-      <View
-        style={[
-          styles.progressTrack,
-          { backgroundColor: colors.surfaceSecondary },
-        ]}
-      >
-        <View
-          style={[
-            styles.progressFill,
-            {
-              width: `${normalizedProgress}%`,
-              backgroundColor: colors.accent,
-            },
-          ]}
-        />
-      </View>
-
-      <Text style={[styles.progressLabel, { color: colors.accent }]}>
-        {normalizedProgress}% completed
-      </Text>
+      <ProgressBar
+        percent={normalizedProgress}
+        label={`${normalizedProgress}% completed`}
+        labelPosition="top"
+        color={colors.accent}
+        showPercent
+      />
 
       <View style={styles.footer}>
         <View style={styles.countItem}>
           <Text style={[styles.count, { color: colors.textPrimary }]}>
             {completed}
           </Text>
+
           <Text style={[styles.countLabel, { color: colors.textSecondary }]}>
             Completed
           </Text>
@@ -88,6 +80,7 @@ const ProgressCard: React.FC<ProgressCardProps> = ({
           <Text style={[styles.count, { color: colors.textPrimary }]}>
             {pending}
           </Text>
+
           <Text style={[styles.countLabel, { color: colors.textSecondary }]}>
             Pending
           </Text>

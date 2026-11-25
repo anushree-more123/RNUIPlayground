@@ -239,41 +239,44 @@ const CardsScreen: React.FC<CardsScreenProps> = ({ navigation }) => {
         />
 
         <View style={styles.horizontalRow}>
-          <ProgressCard
-            title="Project One"
-            description="Design and development progress."
-            completed={343}
-            pending={368}
-            progress={48}
-            onPress={() => showMessage('Project one')}
-          />
-
-          <ProgressCard
-            title="Project Two"
-            description="Product implementation progress."
-            completed={488}
-            pending={105}
-            progress={72}
-            onPress={() => showMessage('Project two')}
-          />
-        </View>
-
-        <View style={styles.horizontalRow}>
-          <ProgressCard
-            title="Campaign One"
-            description="Marketing campaign activities."
-            completed={76}
-            pending={24}
-            progress={76}
-          />
-
-          <ProgressCard
-            title="Campaign Two"
-            description="Customer engagement activities."
-            completed={54}
-            pending={46}
-            progress={54}
-          />
+          <View style={styles.progressCard}>
+            <ProgressCard
+              title="Project One"
+              description="Design and development progress."
+              completed={343}
+              pending={368}
+              progress={48}
+              onPress={() => showMessage('Project one')}
+            />
+          </View>
+          <View style={styles.progressCard}>
+            <ProgressCard
+              title="Project Two"
+              description="Product implementation progress."
+              completed={488}
+              pending={105}
+              progress={72}
+              onPress={() => showMessage('Project two')}
+            />
+          </View>
+          <View style={styles.progressCard}>
+            <ProgressCard
+              title="Campaign One"
+              description="Marketing campaign activities."
+              completed={76}
+              pending={24}
+              progress={76}
+            />
+          </View>
+          <View style={styles.progressCard}>
+            <ProgressCard
+              title="Campaign Two"
+              description="Customer engagement activities."
+              completed={54}
+              pending={46}
+              progress={54}
+            />
+          </View>
         </View>
 
         {/* Custom BaseCard examples */}

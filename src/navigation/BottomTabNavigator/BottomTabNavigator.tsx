@@ -26,6 +26,7 @@ import BadgesScreen from '../../screens/Home/Badges/BadgesScreen';
 import GraphScreen from '../../screens/Graph/GraphScreen';
 import ProgressBarScreen from '../../screens/Graph/ProgressBarScreen/ProgressBarScreen';
 import ButtonsScreen from '../../screens/Home/Buttons/ButtonsScreen';
+import DualProgressBarScreen from '../../screens/Graph/DualProgressBarScreen/DualProgressBarScreen';
 
 // Stack navigators
 const UIStack = createNativeStackNavigator<UIStackParamList>();
@@ -71,6 +72,11 @@ const GraphStackNavigator = () => (
       options={{
         headerShown: false,
       }}
+    />
+    <GraphStack.Screen
+      name="DualProgressBar"
+      component={DualProgressBarScreen}
+      options={{ headerShown: false }}
     />
   </GraphStack.Navigator>
 );
